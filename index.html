@@ -13,23 +13,34 @@
     <title>My weather app</title>
   </head>
   <body>
-    <div>
+    <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city" required />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div class="weather-app">
-          <h1>Johannesburg</h1>
-          <p>
-            Friday 17:26, Sunny
-            <br />
-            Humidity: 56%, Wind: 3.4km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Paris</h1>
+            <p class="weather-app-details">
+              Tuesday 14:49, scattered clouds
+              <br />
+              Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌤️</div>
+            <div class="weather-app-temperature">12</div>
+            <div class="weatehr-app-unit">°C</div>
+          </div>
         </div>
-        <div>☀️26 &deg;C</div>
       </main>
       <footer>
         Coded by
